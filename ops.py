@@ -8,10 +8,6 @@ from ts_logger import logger
 from query import query_tweets
 
 
-BEGIN_DATE = dt.date(2018, 1, 1)
-END_DATE = dt.date.today()
-
-
 class Tweeter:
 
     def __init__(self):
