@@ -46,7 +46,8 @@ class Tweeter:
             # print("Number of days:\t", (END_DATE - BEGIN_DATE).days)
             start_time = dt.datetime.now()
             # call twitter api to fetch tweets
-            for tweet in query_tweets("to:%s" % handle, count, begindate=BEGIN_DATE, enddate=END_DATE)[:count]:
+            for tweet in query_tweets("to:%s" % handle, count, begindate=Config.BEGIN_DATE,
+                                      enddate=Config.END_DATE)[:count]:
                 if len(tweet.text) < 5:
                     continue
 
