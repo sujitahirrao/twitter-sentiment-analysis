@@ -62,6 +62,7 @@ class Tweeter:
 
                 # saving text of tweet
                 parsed_tweet['text'] = tweet.text
+                parsed_tweet['timestamp'] = tweet.timestamp
                 # saving sentiment of tweet
                 parsed_tweet['sentiment'] = self.get_tweet_sentiment(tweet.text)
 
